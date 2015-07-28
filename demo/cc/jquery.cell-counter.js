@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Offline Cell Counter</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <style>
-        .break-all
-        {
-            word-break: break-all
-        }
-        .column-header
-        {
-            vertical-align: middle;
-            height: 34px;
-            line-height: 34px;
-        }
-        .percentage::after
-        {
-            content: "%";
-        }
-    </style>
-</head>
-<body>
-<div class="container"></div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript">
 (function($) { // create closure
     $.fn.occ = function(options) {
         var defaults = {
@@ -254,6 +225,7 @@
                 }
             }
             function drawTable() {
+                $('<style type="text/css"> .break-all { word-break: break-all } .column-header { vertical-align: middle;  height: 34px; line-height: 34px; } .percentage::after { content: "%"; } </style>').appendTo('head');
                 var table = $('<table class="table table-hover table-bordered table-condensed table-striped"></table>');
                 var tbody = $('<tbody></tbody>');
                 container.append('<h2>Offline Cell Counter</h2>').append(table).append('<div class="text-right"><button type="button" class="btn btn-primary" id="reset">Reset</button></div>');
@@ -309,11 +281,3 @@
         });
     }
 })(jQuery);
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".container").occ();
-    });
-</script>
-</body>
-</html>
