@@ -1,3 +1,8 @@
+/*!
+ * jquery.cell-counter.js (https://github.com/vonugut/cell-counter-jquery)
+ * Copyright 2015 vonugut@gmail.com
+ * Licensed under MIT (https://github.com/vonugut/license/blob/master/LICENSE.md)
+ */
 (function($) { // create closure
     $.fn.occ = function(options) {
         var defaults = {
