@@ -228,7 +228,7 @@
                 $('<style type="text/css"> .break-all { word-break: break-all } .column-header { vertical-align: middle;  height: 34px; line-height: 34px; } .percentage::after { content: "%"; } </style>').appendTo('head');
                 var table = $('<table class="table table-hover table-bordered table-condensed table-striped"></table>');
                 var tbody = $('<tbody></tbody>');
-                container.append('<h2>Offline Cell Counter</h2>').append(table).append('<div class="text-right"><button type="button" class="btn btn-primary" id="reset">Reset</button></div>');
+                container.append('<h2>Cell Counter</h2>').append(table).append('<div class="text-right"><button type="button" class="btn btn-primary" id="reset">Reset</button></div>');
                 table.append('<thead><tr><td colspan="3"><div class="column-header pull-left">Differential</div><div class="pull-right"><input type="text" class="form-control" id="sample-size" placeholder="Sample Size"></div></td></tr></thead>');
                 table.append(tbody);
                 tbody.append('<tr><td colspan="3"><textarea id="input-sequence" class="form-control" placeholder="Input Sequence" rows="6"></textarea></td></tr>');
