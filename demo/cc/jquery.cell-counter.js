@@ -24,13 +24,13 @@
                     summable: true
                 },
                 Eosinophil: {
-                    typeCode: [53, 101],
-                    typeChar: "5",
+                    typeCode: [54, 102],
+                    typeChar: "6",
                     summable: true
                 },
                 Basophil: {
-                    typeCode: [54, 102],
-                    typeChar: "6",
+                    typeCode: [53, 101],
+                    typeChar: "5",
                     summable: true
                 },
                 Bands: {
